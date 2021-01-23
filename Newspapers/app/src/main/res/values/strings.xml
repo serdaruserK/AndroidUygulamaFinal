@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Newspapers</string>
+    <string name="kayit_ol">Kayıt Ol</string>
+    <string name="hesabin_yok_mu">Hesabın yok mu?</string>
+</resources>

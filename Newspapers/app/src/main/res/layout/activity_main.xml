@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#53BDDD"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/logbtn"
+        android:layout_width="199dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="106dp"
+
+        android:layout_marginEnd="106dp"
+        android:layout_marginBottom="16dp"
+        android:text="GİRİŞ"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mailrtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="28dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/username"
+        android:ems="10"
+        android:hint="e-posta"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/psstxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/passrtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginBottom="74dp"
+        android:background="#ffffff"
+        android:drawableLeft="@drawable/password"
+        android:ems="10"
+        android:hint="şifre"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/logbtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/mltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="12dp"
+        android:text="E-posta"
+        app:layout_constraintBottom_toTopOf="@+id/mailrtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/psstxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="279dp"
+        android:layout_marginBottom="10dp"
+        android:text="Şifre:"
+        app:layout_constraintBottom_toTopOf="@+id/passrtxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="169dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="74dp"
+        app:layout_constraintBottom_toTopOf="@+id/mltxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/haber" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="115dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="134dp"
+        android:text="@string/hesabin_yok_mu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textregister"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textregister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="134dp"
+        android:text="@string/kayit_ol"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

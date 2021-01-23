@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sondk"
+    tools:context=".NewsDetail">
+
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:autoSizeTextType="uniform"
+        android:background="#96C6C2C2"
+        android:fontFamily="sans-serif-black"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="#D3DA03" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textDes"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_below="@id/imageView"
+        android:layout_marginTop="10dp"
+        android:autoSizeTextType="uniform"
+        android:background="#E5E8FA"
+        android:textAlignment="center"
+        android:textColor="#FC151515" />
+    <TextView
+        android:id="@+id/txtUrl"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-black"
+        android:textAlignment="center"
+        android:text="URL"
+        android:autoSizeTextType="uniform"
+        android:background="#96F6F6F6"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/textDes"
+        android:layout_marginTop="5dp"
+
+
+        />
+
+    <Button
+        android:id="@+id/kayitbtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text="kayıt"
+        android:layout_marginTop="243dp"/>
+
+</RelativeLayout>
